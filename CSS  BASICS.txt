@@ -1,0 +1,241 @@
+->CSS stands for Cascading style sheet.
+->It is a language to give styling and design to websites.
+->There are many reasons to use css,such as: styling,layout& design,animations etc...
+->we saved .css format and  linked to using an HTML tag.
+ --> selector:It is the element /tag for which we want to apply the style.
+ -->property:name of style
+ -->value: Value of the property
+->CSS SELECTORS:
+         1)simple selectors 2) combinator selectors 3)Pseudo-class  selectors  4)Pseudo-element selectors  5)Attribute selectors
+     -->Selectors are ways of grabbing and manipulating html.Different selectors have different applications.
+-->1)element selector-->eg:<h1> A heading</h1>
+                                             <p>some text.</p>
+                                             <h1>another heading</h1>
+                                             p{
+                                                      color:red;
+                                                 }
+-->2)class selector-->eg:<h2 class="idet">a bcd</h2>
+                                         <p class="idet" > rarandoy  </p>
+                                         .idet {
+                                                  color:blue;
+                                              }
+             --> the class selector used to select elements with a  certain class name.
+-->3)id selector--> we use #sometext{
+                                                            color:red;
+                                                            }
+
+-->SIMPLE SELECTORS: 1)Tag based selector  2)Id based selector(#)  3) class based selector(.)
+-->COMBINATOR SELECTORS:  1)Descendent selectors(space)   2)Child Selectors(>)  3)Adjacent selectors(+)    4)General selectors(~)
+ -->PSEUDO-CLASS SELECTORS (:)  :   eg: for lists
+1) li:first-child{
+background-color:green;
+}
+2)li:last-child{
+background-color:green;
+}
+3)li:nth-child(3){
+background-color:green;
+}
+4)li:nth-child(2n){
+background-color:green;
+}
+5)a:link{                  -->set your link colour 
+bcolor:green;
+}
+6)a:hover{        -->when you move the curser to the link then they change to what colour you want which is given in the  hover.
+color:blue;
+}
+7)a:active{
+color:red;
+}
+8)a:visited{                --> after we visited that link then they can change to some particular color.
+color:green;
+}
+
+-->PSEUDO-ELEMENT SELECTORS (::)   :  eg:
+1)<style type="text/css">
+h1::first-letter{
+color:red;
+background-color:yellow;
+}
+</style>
+2)<style type="text/css">
+h1::first-line{
+color:red;
+background-color:yellow;
+}
+</style>
+3)<style type="text/css">
+p::first-line{
+color:blue;
+}
+</style>
+4)<style type="text/css">
+p::selection{
+color:red;
+background-color:yellow;
+}
+</style>
+
+
+-->ATTRIBUTE SELECTORS:  eg:
+1)<style type="text/css">
+font[color]{
+color:green;
+}
+</style>
+2)<style type="text/css">
+font[size]{
+color:green;
+}
+</style>
+
+BORDER STYLE PROPERTIES:
+ ->border-width
+ ->border-style    -->1)solid 2)dotted 3)dashed 4)double 5)groove 6)Ridge 7)inset 8)outset 9)none 10)mix
+->border-color
+
+COLOR PROPERTIES: 1)Element /Text color  2)Background-color
+
+CSS BACKGROUND -STYLES:
+    1)Background-color
+  2)Background - image ->1)background-repeat(sub-properties:    1)no-repeat 2)repeat-x 3) repeat-y )  2)background-position (   1)right top 2)right bottom 3)left bottom 4)center   )   3)background-attachment(  1)fixed  2)scroll)
+
+MARGINS AND PADDING:
+EG:    <p  style="border:10px solid red;padding:5px ; margin:40px"> hi edewfk wewlkfmlwelkf </p>    
+
+FONT STYLES IN CSS:
+1)font-family-->eg:arial, tahoma,"times new roman",  times    etc.
+2)font-style--> eg: italic(oblique)
+3)font-size-->eg: 29px
+4)font-weight-->eg: bold
+
+TEXT STYLES:
+1)Text-color--> gives color to the text
+2)text-align--> left/right/center/justify
+3)text-decoration-->underline/overline/line-through
+4)text-transform-->uppercase/lowercase/capitilize
+5)letter-spacing-->gives space between the letters.(eg: letter-spacing:2px)
+6)word-spacing-->gives space between the words.(eg: word-spacing:5px)
+7)line-height-->increases/decreases the space between the lines.(eg: line-height:30px)
+8)text-indent-->gives indent to the text(eg:  text-indent:20px    the starting paragraph starts after 20px gap)
+9)text-shadow-->gives shadow to the text(eg: text-shadow: 5px 5px gray;)where 5px is horizontal and another 5px is vertical.
+
+BACKGROUND IMAGES MULTIPLE IMAGES ADD:
+eg:  background-image: url(image1.jpg),url(image2.jpg),url(image3.jpg);
+
+OVERFLOW:
+         1)visible 2)scroll 3) hidden 4)auto
+   eg:<style>
+p{
+overflow:scroll;
+</style>
+
+FLOAT AND CLEAR:
+   EG:
+<style>
+img{
+float:left;
+}
+</style>
+2)for paragraphs create an id and use this properties
+<style>
+#first{
+float:left;
+width:500px;
+border:3px solid green;
+}
+#second{
+float:right;
+width:500px;
+border:3px solid red;
+}
+#third{
+clear:left;
+}
+#fourth{
+clear:both;
+}
+</style>
+
+MENU/NAVIGATION BAR:
+    eg:<style>
+*{
+margin:0px;
+padding:0px;
+}
+body{
+margin-top:20px;
+margin-left:20px;
+background-image:url(logo.jpg);
+background-size:100%;
+}
+ul{
+list-style-type:none;
+}
+ul li{
+background-color:green;
+color:white;
+}
+ul li{
+float:left;
+width:150px;
+height:40px;
+background-color:royal-blue;
+text-align:center;
+line-height:40px;
+font-size:29px;
+color:tomato;
+border-radius:10px;
+opacity:0.9;                                                   -->The opacity is bettween 0 and 1 values.
+}
+ul li a{
+text-decoration:none;
+color:red;
+}
+ul li ul{
+display:none;
+}
+ul li :hover > ul{
+display:block;
+}
+ul li ul li{
+position:relative;
+}
+ul li ul li ul{
+position:absolute;
+margin-left:200px;
+top:0px;
+}
+</style>
+<body>
+<list>
+<ul>
+<li> <a href="#">HOME</a></li>
+<li><a href="https://google.com"><ABOUT US</a></li>
+<li><a href="#">POLICY</a>
+       <ul><li><a href="#">MS-OFFICE</a>
+                     <ul><li> <a href="#">word</a></li>
+                           <li> <a href="#">excel</a> </li>
+                            <li><a href="#"> tally </a></li>
+                            <li><a href="#"> access</a></li>
+                        </ul>
+          
+                 </li>
+               <li><a href="#">web</a></li>
+                 <li><a href="#">tally</a></li>
+                 <li><a href="#">all</a></li>
+           </ul>
+</li>
+<li><a href="#">CAREERS</a></li>
+<li><a href="#">CONTACT US</a></li>
+<li><a href="#">YOURS</a></li>
+</ul>
+</list>
+</body>
+
+
+
+
+
+

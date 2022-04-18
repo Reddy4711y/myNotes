@@ -1,0 +1,72 @@
+JAVA HISTORY AND BASIC CONCEPTS:
+*java is an object-oriented,class-based,concurrent,secured and general-purpose computer programing language.(java is high level language)
+*java is an interpreted language.
+*java was developed by Sun microsystems (which is now the subsidiary(it means anubandha or a company that belongs to another company which is usually referred to as the parent company) of oracle)in the year 1995.
+*James Gosling is known as the father of java.
+*firstly it was called "GREENTALK",then its name was Oak.since oak was already registered company,so james gosling and  his team changed the name from oak to java.
+*according to sun microsystems ,3 billion devices run java like	! desktop applications such as acrobat reader,media player etc....,!web applications like javatpoint.com etc...!enterprise applications such as banking applications!mobile !embedded system(eg.mp3 players,video game consoles etc...),!smart card !robotics !games  etc.....
+*java applications:there are mainly  4 types of applications that can be created using java programing.
+                                 1.STANDALONE APPLICATION:this is also known as  desktop applications or window-based applications.examples of these applications are media player,antivirus etc..
+                                  AWT and Swing are used in java for creating standalone applications.
+                                2.WEB APPLICATION:an application that runs on the server side and  creates a dynamic page is called web application.
+                                3.ENTERPRISE APPLICATION:eg.banking applications etc.. .it has advantages like high-level security,load balancing and clustering(it means  a number of similar things growing or grouped closely together).
+                                    in java EJB is used for creating enterprising applications.
+                                 4.MOBILE APPLICATION:which is created for mobile devices.
+                                    currently,android and java ME(micro edition) are used for creating mobile applications.
+*the features of java  are also known as java buzzwords.
+* the most important features of java are object oriented,simple,secured,platform independent,robust(strong),portable,architecture neutral,dynamic,interpreted,high performance,multithreaded,distributed.
+ *there are two types of platforms  software-based and hardware-based.java provides a software-based platform.in the sense that it is a software-based platform that runs on the top of other hardware-based platforms.
+                     ->top of hardware based it has two components:1)runtime environment  2)API(application programming interface)
+*this java code we can run any platform that is WORA(write once and run anywhere)
+*java is secured because:
+                                     ->no explict pointer,java programs runs inside a virtual machine sandbox,classloader,bytecode verifier,security manager.
+                        java language provides these securities by default.
+*class keyword is used to declare a class in java.
+*public keyword is an access modifier that represents visibility.it means it is visible to all.
+*void is the return type of the method.it means it doesnot return any value.
+*main represents the starting point of the program.
+*static is a keyword,if we declare any method as static it is known as the static method.the core advantage of the static method is that there is no need to create an object.
+*String[] args or String args[] is used for command line argument.
+*System.out.println() is used to print statement
+* PACKAGE:-->package is a container which can segregate the files in java project.
+
+
+
+
+OOPS CONCEPTS->collection of objects and classes.
+      1)object-->An entity that exists physically in the real world which requires some memory will be called as an object.
+                 Every object will contain some "properties" and some "actions".
+                 The properties are the data or information which describes the object and they are represented by variables.
+                 Actions are the tasks or the operations performed by the object they are represented by methods.
+      2)class -> A class is a  collection of  common Properties and common actions of a group of objects.
+                 A class can be considered  as a plan or a model or a blueprint for creating an object.
+                 For a class we can create any number of objects.
+                 without class we cannot create objects.
+                 An object is an instance of a class.
+ENCAPSULATION:
+     Encapsulation is a process of binding the variables and methods into a single entity.
+     Using this we can implement abstraction(data hiding).
+     Using this we can improve the maintenance of the application.
+
+INHERITANCE:
+       Inheritance is a process of acquiring the members from one class to another class.
+       Using this we can achieve reusability and there by reduce  the code size and reduce the development time.
+
+POLYMORPHISM:
+       If a single entity shows  multiple behaviours then it is called as polymorphism.
+       we do Method overloading and method overriding.
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    
+                        

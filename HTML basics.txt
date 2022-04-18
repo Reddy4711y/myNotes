@@ -1,0 +1,434 @@
+web designing course..
+How to develop web apps?
+1.Html(hyper text markup language)-->developed by Tim Berners-Lee
+2.CSS
+3.Javascript
+framework--> react
+first create web pages before we create the websites so html uses to create web pages.
+Html introduction :
+     1)tag--> <tagname>content</tagname>
+     2) element --> <tagname>content</tagname> this total statement is said to be an element
+html consists of  series of elements,these elements tell the browser how to display the content,Elements are represented by tags.
+Browser do not display the tags ,but use them to render the content of the page.
+HTML BASICS   :
+head,body,attribute  eg: style is attribute(ex: style="background-color:blue" which you passed through the body tag  ),key(eg:background-color is key),value(eg: blue is value)(("they always come in name /value pairs like : name="value"))
+paragraphs(syntax:<p> to define paragraphs),headings(<h1>,<h2>,<h3>.........<h6> to create headings  which is in the form of bold)
+BREAK tag--->to give space between paragraphs we give the  element is  "br"<br>
+All html elements can have attributes.they provide  additional information  about an element,they are always specified in the start tag.
+Hr--> Horizontal rule(<hr>)
+pre--> pre formatted element(<pre>)
+BASIC   STYLES:  <tagname style="property:value;">     few styles-->background color,text color , fonts , text size ,text alignment
+TEXT FORMATTING:bold(<b>),strong(<strong>),italic(<i>),emphasized text(<em>),small(<small>),delete(<del>),mark(<mark>)
+ins->inserted text(underline provider   is   <ins>   )
+subscript example h20 (ex: <p>H<sub>2</sub> o</p>),superscript example 10 square(ex:<p>10<sup>2</sup></p>)
+QUOTATIONS AND CITATIONS:
+quations(<q>),blockquote(<blockquote>  which provide some tab space )
+abbrevation(<abbr>   eg: <abbr   title="Hyper Text markup Language">HTML</abbr>),address(<address>change automatically in the form of italic)
+cite(<cite> used to provide titles it is like italic type)
+biodirectional override(to print the statement in reverse order  <bdo> eg:<p><bdo dir="rtl">reddy</bdo></p>   the rtl means right to left the output is ydder)
+COMMENTS:
+--> It is useful for debugging and  documentation.
+To provide the code information for referring in future (<!--anything you want write-->)
+COLORS:
+-->HTML colors are specified using predefined color names or RGB --> range 0-255(red ,green,blue--> eg:style="background-color:rgb(10,30,100)
+HEX(hexadecimal value #rrggbb  eg:<body style="background-color:#010267"</body>)     
+HSL(hue,saturation(intensity of a color),lightness)(eg:style="background-color:hsl(45,0%,24%)")
+-->hue is a degree on the color wheel from 0 to 360.0-120 is red,120-240 is green , and 240-360 is blue.
+-->saturation can be described as the intensity of a color.Saturation is a percentage value ,0% complete gray,50% is 50% gray but you can still see the color and 100% is the full color.
+--> the lightness of a color can be described 0% means no light(black),50% means 50% light(neither dark nor light) 100% means full lightness(white).
+RGBA(red ,green, blue ,alpha(the alpha parameter is a number between 0.0(fully transparent) and 1.0(not transparent at all))
+HSLA( hue,saturation(intensity of a color),lightness,alpha)values.
+CSS introduction:
+-->css stands for Cascading Style Sheets,it saves a lot of work.
+-->3 ways   1)inline -->by using the style attribute in html elements  2)internal--> by using  a <style> element in the <head> section 3)external-->by using an external css file
+external(we provided in the head part) --> first we create the file and save with css extension eg:<link rel="stylesheet" href="external.css"/> where rel is relation
+we can give colors based on 
+1)id attribute(eg:<p id="p01">i am reddy</p> then define  a style for the element with a specific id    #p01{
+                                                                                                                                                                                                                      color:blue;
+                                                                                                                                                                                                                        }
+2)class  attribue--> to define a style for special type of elements ,add a class attribute to the element   <p class="danger">i am danger</p>
+                          then define a style for the  elements  with a specific class:
+                                                                                                                p.danger{
+                                                                                                                            color:red;
+                                                                                                                          }
+
+
+DIVS AND SPANS:
+-->spans are inline containers and divs are block containers.
+<body>
+<span>span1</span>
+<span>span2</span>
+
+<div> div1 </div>
+<div>div2</div>
+</body>
+
+
+
+
+
+LINKS-HYPERLINKS:
+   anchor(the anchor element  creates a  hyperlink to web pages,files ,email addresses,locations in the same page  or anything else a url can address.)-->it is provide links(<a>)eg:<a href=" https://techs.sureshyadam.com"  target="_blank">reddy</a>  
+ where href stands for hypertext reference.the target by default is self(target="_self") that means the url will open that particular page only so instead for that we give blank(target="_blank") then they open in new tab
+and  another two values are parent(target="_parent") and top(target="_top")
+._blank--> opens the linked document in a new window or tab
+._self--> opens the linked document in the same window / tab as it was clicked(this is default)
+._parent--> opens the  linked document in the parent frame
+._top --> opens the linked document in the full body of the window
+ to move local files which is our folder  eg: <a href="css styles.html">example for css styles</a>
+title-->eg:<a href="https://google.com"  target="_blank"    title="google">google website pillalu</a> when they touch the link with their mouse then the title name will be displayed so they understand what is  this link about.
+
+
+
+IMAGES:
+<img> eg:<img src="path of the image"/>  where src is source  eg:<img src="C:\Users\hemanth\Pictures\Saved Pictures\tarak.jpg"/>
+height and width attributes-->    eg:    <img     src="C:\Users\hemanth\Pictures\Saved Pictures\tarak.jpg"    height="100"    width="100"/>
+ height and width by using style attribute-->eg:  <img src="C:\Users\hemanth\Pictures\Saved Pictures\tarak.jpg"  style="width:100;height:100"/>
+ if images are not displayed some reasons then instead of that we dispaly name in that we use attribute is  alternative of an image(alt)-->    eg:   <img src="C:\Users\hemanth\Pictures\Saved Pictures\tarak.jpg"   title="ntr image"  alt="NTR IMAGE"/>
+
+
+IMAGE MAPS:
+-->map means collection of areas       (<map>)
+--> areas are 4 types  rect(defines a rectangular region),circle(defines a circular region),poly(defines  a polygonal region),default(defines the entire region)
+area eg: <map name="google image">
+              <area shape="rect"  coords="400,70,700,350"  href="https://google.com"/>
+              </map>
+         where coords means coordinates
+IMPORTANT-->
+usemap attribute--> to perfom some actions on image by clicking the image
+                       eg:<img src="C:\Users\hemanth\Pictures\Saved Pictures\tarak.jpg"  usemap="#google image"/>
+
+                                  <map name="google image">
+                              <area shape="rect"  coords="400,70,700,350"  href="https://google.com"/>
+                               <area shape="circle"  coords="800,300,60"  href="https://yahoo.com"/>
+                                </map>
+BACKGROUND IMAGES:
+<body     style="background-image:url('C:\Users\hemanth\Pictures\Saved Pictures\tarak.jpg');background-repeat:no-repeat;background-size:100% 100%"  >  
+100% width and 100% height  and also we use background-size:cover
+PICTURE ELEMENT:
+<picture>
+<source media="(min-width:600px)"  srcset="C:\Users\hemanth\Pictures\Saved Pictures\tarak.jpg">
+<source media="(min-width:400px)"   srset="C:\Users\hemanth\Pictures\Saved Pictures\won.jpg">
+<img src="C:\Users\hemanth\Pictures\Saved Pictures\logo.jpg">
+</picture>
+when to use the picture element:1)bandwidth 2)format Support
+MARGIN - PADDING -BORDERS  -  CSS BOX  model:
+BORDER(a border that goes around the  padding and content):
+1)style="border: 2px solid blue" where 2px is width
+2)style="border: 2px dotted blue"
+PADDING(clears an area around the content.the padding is transparent): the space between the content and the margin(border)
+<h1    style="border: 2px solid blue;padding:20px">  content </h1>
+<h1    style="border: 2px solid blue;padding-left:20px">  content </h1>
+MARGIN(clears an area outside the border):margin apply outside the border
+<h1    style="border: 2px solid blue;padding:20px;margin:45px">  content </h1>
+content-->the content of the box where text and images appear
+total width and height of the element-->
+   1)total element width = width + left padding  + right padding  + left border +right border +left margin + right margin
+   2)total element height = height + top padding + bottom padding +top border + bottom border+ top margin  + bottom margin
+
+TABLES:
+(<table>)
+table row(<tr>),table data(<td>),table head(<th>),border-collapse:collapse,colspan(coloumn span),rowspan,caption(<caption>)
+--> by default ,table headings  are bold and centered.to left-align the table headings ,use the CSS text-align property(text-align:left)
+
+LISTS(3 types of lists in html):
+ordered list,unordered list,description list
+1)ordered list:  used to group a set of related items in a specific order
+2)unordered list:  used to group a set of related items in no particular order
+3)description list: used to display name/value pairs such as terms and definitions
+unorderd list-->(the element is <ul>)  eg: <ul style="list-style-type:circle">,list item(<li>)
+ordered list--> (<ol>    eg:<ol type="1" start="60">) 
+                                        eg:<ol>
+                                            <li> reddy </li>
+                                             <li> bro </li>
+                                          </ol>
+descriptionList-->(<dl>)   , dataterm(<dt>) ,   description(<dd>)
+            eg:<dl>
+                  <dt>SACHIN<dt>
+                   <dd> sachin is one of the crickter and also he is god of cricket</dd>
+                 </dl>
+BLOCK AND INLINE:
+        Block-level Elements--> a block-level element always starts on a  new line and takes up the full width 
+available (streches out to the left and right as far as it can).the <div> element is a block-level element.
+the block-level elements in html-->   <address>,<dd>,<figcaption>,<header>,<noscript>,<table>,<article>,<div>,<figure>,<hr>,<ol>,<p>,<ul>,<tfoot>,<aside>,<dl>,<footer>,<li>
+         <blockquote>,<dt>,<form>,<main>,<pre>,<video>,<canvas>,<fieldset>,<h1>....<h6>,<nav>,<section>
+In-Line elements-->an inline elements does not start on a new line and only takes up as much width as necessary.
+      the in-line elements in html-->  <a>,<big>,<dfn>,<kbd>,<q>,<span>,<time>,<abbr>,<br>,<em>,<label>,<samp>,<strong>,<tt>,<acronym>,<button>,<i>,<map>,<script>,<sub>
+           <var>,<b>,<cite>,<img>,<object>,<select>,<sup>,<bdo>,<code>,<input>,<output>,<small>,<textarea>
+CLASS ATTRIBUTE:
+        explore the program which is in the notepad.
+    --> the html class attribute  is used to define  equal styles for elements with the same class name
+   -->so,all html elements with the same class attribute  will get the same style.
+   NOTE:1)The class name is case sensitive!
+               2)The class attribute  can be used on any html  element.
+ID ATTRIBUTE:
+    --> The id attribute specifies  a unique id  for an html element.
+    -->To select an element with a specific id ,write a hash(#) character followed by the id of  the element.
+   ---> The id value is case-sensitive.
+   --> The id value must contain atleast  one character, and must not contain  whitespace (spaces,tabs,etc).
+  
+DIFFERENCE BETWEEN CLASS AND ID:
+    -->An HTML Element can only have  one unique id  that belongs to that single element,while a class name can be used by multiple elements.
+
+IFRAMES:
+-->An IFrame is used to display a web page within a web page.
+-->An HTML IFrame is defined with the <iframe> tag.  
+--> to remove the border,add the style attribute and use the CSS border property.
+
+FILEPATHS:
+1)Absolute File Paths
+2)Relative File Paths
+--> It Is best practice  to use relative file paths(if possible).
+
+CHARSETS:
+--> To display an HTML page correctly,the browser must know what character-set(encoding) to use.
+-->since ASCII used 7 bits for the character ,it could only represent  128 different characters.
+-->the default character-set in html 4 is ISO-8859-1.(it display 256 characters )
+-->ANSI(american national  standard  institute) in windows: windows 1252.
+             .It uses a full byte(8-bits) to represent 256 different characters.
+-->IN HTML5:Unicode UTF-8  ( UTF=unicode transformation format)
+                       .The default character-set for  HTML5 is UTF-8.
+
+HEAD ELEMENT:
+meta(<meta>) --> meta has the no closing tags.
+script(<script>)-->in javascript
+--> The <head> element is a container  for metadata(data about data) and is placed between the  <html> tag and the <body> tag.
+-->The following tag describe metadata: <title>,<style>,<meta>,<link>,<script> and <base>.
+-->The <style> element is used to define style information for a single HTML page.
+-->The <link>  element is used to link to external style-sheets.
+-->The <meta> element is used to specify which character  set is used ,page description ,keywords ,author and other meta data.Metadata  is used by browsers(how to display content),
+      by search engines(keywords),and other web services.
+-->The <script> element is used  to define  client-side javaScripts.
+
+HTML LAYOUTS:
+  .CSS float property
+  .CSS flexbox
+   .CSS framework
+    .CSS grid
+HTML  COMPUTER CODE:
+     ex:<code>
+            var <var>a</var>=10;
+            var b=20;
+            var c =a+b;
+         </code>
+HTML <kbd> FOR keyboard input:
+ eg:<kbd>
+      <p>ctrl+s</p>
+     </kbd>
+HTML <samp> For Program Output:
+.the html <samp> element represents  output from a program or computing system.
+
+HTML SEMANTICS:
+1)section 2) article 3)header  4)footer 5)nav 6)aside 7)figure 8)figcaption
+
+HTML ENTITIES:
+->reserved characters in html must be replaced with character entities.
+->if you use the less than(<) or greater than(>) signs in your text, the browser might mix them with tags.
+->&entity_name;    OR    &#entity_number;--> trademark(number is 174),pound(number is 163)
+eg:1)<p>this is &euro; symbol</p>   -->entity_name
+  2)<p>this is &copy; symbol</p>      -->entity_name
+3)<p>this is &reg; symbol</p>            -->entity_name
+  4)<p>this is &#174; symbol</p>        -->entity_number
+5)<p>this is &#163; symbol</p>        -->entity_number
+
+NON-BREAKING SPACE:
+.  &nbsp;
+eg:   <p> reddy ree eee e  er  er   er  er &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;                         errrt r</p>
+
+HTML EMOJIS:
+-->emojis are also characters from the UTF-8 alphabet.
+--> smile is 128516,love smile is 128525,love is 128151
+-->eg: <p> &#128516; </p>
+
+HTML URL Encode:   URL stands for uniform resource locator.
+->A URL is another word for a web address.
+-->A URL can be composed of words or an ip address.
+-->syntax:   scheme://prefix.domain:port/path/filename  (scheme like https,prefix like www)
+-->URLs  can only  be sent over the internet using the ascii character-set.if a url contains  characters  outside the ascii set ,the url has to be converted.
+
+
+HTML FORMS:
+    eg:  <form>
+<label>First name</label></br>
+<p> name</p>
+<input type="text"> </input>
+<p>GENDER</p>
+<label for="male">MALE</label><input type="radio" id="male"></input>
+<label for="female">FEMALE</label><input type="radio" id="female"></input></br>
+<input type="submit"  value="login">
+</form>
+
+LOGIN FORM:
+ <form style="width:50%" action="login.php"  target="_blank" method="get">
+<fieldset>
+<legend>Login Form</legend>
+<input type="email" placeholder="Email-id"/></br></br>
+<input type="password" placeholder="password"/></br></br>
+<input type="submit" value="Login"/>
+<input type="reset" value="Reset"/>
+</fieldset>
+</form>
+
+ -->The Action Attribute pass the values to the server.(we need the scripting file attach to the action attribute--> attach server side scripting files like PHP )
+-->the method value are "get" and "post"
+
+PHP is a server side scripting language.
+
+USER INFORMATION FORM CREATION:
+ <form style="width:50%">
+<fieldset>
+<legend>USER INFORMATION</legend>
+<label>Name</label><br><br>
+<input type="text"  placeholder="Name"/></br></br>
+<label>Phone NUmber</label></br>
+<input type="tel" placeholder="phonenumber"/></br></br>
+<label>GENDER</label>
+<input type="radio"  id="male"><label for="male">MAle</label>
+<input type="radio"  id="female"><label for="female">FEMAle</label></br></br>
+<label>Date Of Birth</label><input type="date"/></br></br>
+<label>what social media platforms you are active in?</label></br></br></br>
+<input type="checkbox" id="facebook"/><label for="facebook">FacEBOOk</label></br>
+<input type="checkbox" id="instagram"/><label for="instagram">INSTAGRAM</label></br>
+<input type="checkbox" id="twitter"/><label for="twitter">TWITTER</label></br>
+<input type="submit"/>
+</fieldset>
+
+</form>
+
+
+OTHER INFORMATION FORM:
+<form>
+<fieldset>
+<legend>Other Information</legend>
+<label>1.are you intrested in web paging?</label></br></br>
+<input type="radio"  id="title"><label for="title">YES</label>
+<input type="radio"  id="no"><label for="no">NO</label>
+<label>CHOOSE YOUR COUNTRY</label><br></br>
+<select >
+<option selected>INDIA</option>
+<option>BANGLADESH</option>
+<option>RUSSIA</option>
+<option>UKRAINE</option>
+<option>CANADA</option>
+<option>PAKISTAN</option>
+</select>
+<label>select what are languages you know?</label></br></br>
+<select multiple >
+<option selected>java</option>
+<option>c</option>
+<option>c++</option>
+<option>android</option>
+</select>
+<label>What are your hobbies?</label></br></br>
+<input list="hobbies"/>
+<datalist id="hobbies">
+<option value="reading books">
+<option value="playing sports">
+<option value="watching movies ">
+<option value="cooking">
+</datalist></br></br>
+<label>WHAT IS YOUR FAVORITE COLOR?</label><input type="color"/></br>
+<label>attach if you have any</label><input type="file"/></br>
+<label>enter debit card validity</label><input type="month"/>
+</fieldset>
+</form>
+
+
+FEEDBACK FORM:
+<form>
+<textarea rows="10" cols="60" placeholder="give your valuable comments">
+</textarea>
+</form>
+
+HTML MEDIA:
+     MULTIMEDIA:
+    -->MultiMedia comes in many  different formats.It can be almost anything you can hear or see,like images,music,sound,videos,records,films,animations  and more.
+ -->Web pages often contain multimedia elements of different types and formats.
+  --> Multimedia files have formats and different extensions like:   .wav  ,    .mp3  ,     .mp4 ,  .mpg ,  .wmv  , and .avi.
+
+PLACING A VIDEO IN A WEB APPLICATION:
+<video controls   height="200" width="200">
+<source src="start.mp4"  type="video/mp4"/>
+<source src="start.mp4"  type="video/ogg"/>
+YOUR BROWSER DOES NOT SUPPORT THIS VIDEO
+</video>
+
+HTML AUDIO:
+<audio controls>
+<source src="fireworks.wav"   type="audio/wav">
+</audio>
+
+
+HOW TO ADD YOUTUBE VIDEO IN WEB PAGE?
+<iframe width="400" height="350"  src="pass youtube video id?autoplay=1"></iframe>
+<iframe width="400" height="350"  src="pass youtube video id?playlist="youtube video ids seprated by commas"></iframe>
+<iframe width="400" height="350"  src="pass youtube video id?controls=1"></iframe>
+<iframe width="400" height="350"  src="pass youtube video id?loop=1"></iframe>
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
